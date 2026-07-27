@@ -1,0 +1,250 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+line-height:1.6;
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#222;
+color:white;
+padding:15px 50px;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:gold;
+}
+
+/* Hero */
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(images/hero.jpg);
+background-size:cover;
+background-position:center;
+height:400px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.btn{
+margin-top:20px;
+padding:12px 25px;
+background:orange;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.btn:hover{
+background:red;
+}
+
+/* Categories */
+
+.categories{
+padding:40px;
+text-align:center;
+}
+
+.categories ul{
+list-style:none;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.categories li{
+background:white;
+margin:10px;
+padding:15px 25px;
+border-radius:5px;
+box-shadow:0 0 10px gray;
+}
+
+/* Featured Books */
+
+.featured{
+padding:40px;
+}
+
+.book-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.book-card{
+background:white;
+padding:20px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+transition:.3s;
+}
+
+.book-card:hover{
+transform:scale(1.05);
+}
+
+.book-card img{
+width:100%;
+height:400px;
+object-fit:cover;
+}
+
+/* Table */
+
+table{
+width:90%;
+margin:30px auto;
+border-collapse:collapse;
+background:white;
+}
+
+table,th,td{
+border:1px solid gray;
+}
+
+th{
+background:#333;
+color:white;
+}
+
+th,td{
+padding:12px;
+text-align:center;
+}
+
+/* Reviews */
+
+.reviews{
+padding:40px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.review-card{
+background:white;
+padding:20px;
+width:300px;
+box-shadow:0 0 10px gray;
+border-radius:10px;
+}
+
+/* Contact */
+
+.contact{
+padding:40px;
+text-align:center;
+}
+
+form{
+width:50%;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+input,textarea{
+padding:12px;
+margin:10px;
+}
+
+button{
+padding:12px;
+background:#222;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+background:green;
+}
+
+/* Footer */
+
+footer{
+display:flex;
+justify-content:center;
+align-items:center;
+background:#222;
+color:white;
+padding:20px;
+margin-top:30px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav ul{
+flex-direction:column;
+align-items:center;
+}
+
+.book-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+form{
+width:90%;
+}
+
+}
+
+@media(max-width:480px){
+
+.book-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+}
