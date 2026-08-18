@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest of Three Numbers</title>
+</head>
+<body>
+
+    <h2>Find the Largest of Three Numbers</h2>
+
+    <script>
+        // Taking input from the user
+        let num1 = Number(prompt("Enter the first number:"));
+        let num2 = Number(prompt("Enter the second number:"));
+        let num3 = Number(prompt("Enter the third number:"));
+
+        // Finding the largest number using if-else
+        let largest;
+
+        if (num1 >= num2 && num1 >= num3) {
+            largest = num1;
+        }
+        else if (num2 >= num1 && num2 >= num3) {
+            largest = num2;
+        }
+        else {
+            largest = num3;
+        }
+
+        // Displaying the result
+        document.write("First Number: " + num1 + "<br>");
+        document.write("Second Number: " + num2 + "<br>");
+        document.write("Third Number: " + num3 + "<br><br>");
+
+        document.write("The largest number is: " + largest);
+    </script>
+
+</body>
+</html>

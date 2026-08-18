@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle</title>
+</head>
+<body>
+    <h2>Area & Perimetr of Rectangle</h2>
+    <script>
+        function area(l,w){
+            return l * w;
+        }
+        function perimeter(l,w){
+            return 2 * (l+w);
+        }
+        let l = Number(prompt("Enter length:"));
+        let w = Number(prompt("Enter width:"));
+        document.write("Length: " + l + "<br>");
+        document.write("Width: " + w + "<br>");
+        document.write("Area: " + area(l,w) + "<br>");
+        document.write("Perimeter: " + perimeter(l,w) + "<br>");
+    </script>
+</body>
+</html>

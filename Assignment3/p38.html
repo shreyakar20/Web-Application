@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Event</title>
+</head>
+<body>
+
+    <h2>User Information</h2>
+
+    <form id="myForm">
+        <label>Name:</label>
+        <input type="text" id="name"><br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+
+            document.getElementById("result").innerHTML =
+                "Name: " + name + "<br>" +
+                "Email: " + email;
+        });
+    </script>
+
+</body>
+</html>

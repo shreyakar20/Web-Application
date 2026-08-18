@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Number Check</title>
+</head>
+<body>
+
+    <h2>Check Whether a Number is Prime</h2>
+
+    <script>
+        let number = Number(prompt("Enter a number:"));
+        let isPrime = true;
+        if (number <= 1) {
+            isPrime = false;
+        } 
+        else {
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+        document.write("Number: " + number + "<br>");
+
+        if (isPrime) {
+            document.write(number + " is a Prime Number.");
+        } else {
+            document.write(number + " is Not a Prime Number.");
+        }
+    </script>
+
+</body>
+</html>

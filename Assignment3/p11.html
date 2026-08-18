@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Digits</title>
+</head>
+<body>
+
+    <h2>Count the Number of Digits</h2>
+
+    <script>
+        let number = Number(prompt("Enter an integer:"));
+        let count = 0;
+
+        if (number === 0) {
+            count = 1;
+        } else {
+            while (number > 0) {
+                number = Math.floor(number / 10);
+                count++;
+            }
+        }
+
+        document.write("Number of digits: " + count);
+    </script>
+
+</body>
+</html>

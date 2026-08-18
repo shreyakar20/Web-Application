@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Coordinates</title>
+</head>
+<body>
+
+    <h2>Move the Mouse Over the Box</h2>
+
+    <div id="box" style="width:400px; height:200px; border:2px solid black;">
+    </div>
+
+    <p id="result">X: 0, Y: 0</p>
+
+    <script>
+        document.getElementById("box").addEventListener("mousemove", function(event) {
+            document.getElementById("result").innerHTML ="X: " + event.clientX + ", Y: " + event.clientY;});
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Validation</title>
+</head>
+<body>
+
+    <h2>Number Validation</h2>
+
+    <input type="text" id="number" placeholder="Enter a string">
+    <button onclick="validateNumber()">Validate</button>
+
+    <p id="result"></p>
+
+    <script>
+        function validateNumber() {
+            let number = document.getElementById("number").value;
+            let pattern = /^[0-9]+$/;
+
+            if (pattern.test(number)) {
+                document.getElementById("result").innerHTML ="The string contains only numbers.";
+            } else {
+                document.getElementById("result").innerHTML = "The string does not contain only numbers.";
+            }
+        }
+    </script>
+
+</body>
+</html>

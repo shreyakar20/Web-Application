@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even and Odd Numbers</title>
+</head>
+<body>
+
+    <h2>Even and Odd Numbers in a Range</h2>
+
+    <label>Start:</label>
+    <input type="number" id="start"><br><br>
+
+    <label>End:</label>
+    <input type="number" id="end"><br><br>
+
+    <button onclick="displayNumbers()">Display</button>
+
+    <p id="result"></p>
+
+    <script>
+        function displayNumbers() {
+            let start = Number(document.getElementById("start").value);
+            let end = Number(document.getElementById("end").value);
+
+            let even = "";
+            let odd = "";
+
+            for (let i = start; i <= end; i++) {
+                if (i % 2 === 0) {
+                    even += i + " ";
+                } else {
+                    odd += i + " ";
+                }
+            }
+
+            document.getElementById("result").innerHTML =
+                "Even Numbers: " + even + "<br><br>" +
+                "Odd Numbers: " + odd;
+        }
+    </script>
+
+</body>
+</html>
