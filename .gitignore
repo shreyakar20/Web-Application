@@ -1,0 +1,9 @@
+
+# Node.js dependencies
+node_modules/
+
+# Generated React build files
+dist/
+
+# Environment secrets
+.env
